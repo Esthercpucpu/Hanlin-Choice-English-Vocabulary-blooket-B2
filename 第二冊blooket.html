@@ -134,15 +134,12 @@
     font-weight: 900;
     font-size: 1rem;
     padding: 10px 20px;
-    margin: 20px;
+    position: relative; /* 關鍵修改：讓按鈕佔據空間，不再浮動 */
+    margin: 20px auto 10px 20px; /* 設定間距 */
     border-radius: 50px;
     border: 3px solid #00b4d8;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: all 0.2s ease;
-    position: absolute; 
-    top: 0;
-    left: 0;
-    z-index: 9999;
     cursor: pointer;
 " onmouseover="this.style.backgroundColor='#00b4d8'; this.style.color='white';" onmouseout="this.style.backgroundColor='white'; this.style.color='#00b4d8';">
     <span style="font-size: 1.2rem; margin-right: 5px;">◀</span> 回首頁
